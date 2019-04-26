@@ -1,9 +1,11 @@
 //////////////////////////////////////////////////////////////////////////////
 //		arjs-hit-testing
 //////////////////////////////////////////////////////////////////////////////
+console.log("aframe 1");
+
 AFRAME.registerComponent('registerevents', {
 		init: function () {
-			console.log("test");
+			console.log("aframe 2");
 			var marker = this.el;
 			marker.addEventListener('markerFound', function() {
 				var markerId = marker.id;
