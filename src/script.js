@@ -1,4 +1,4 @@
-var m = document.querySelector("marker")
+var m = document.getElementById("marker")
 m.addEventListener("markerFound", (e)=>{
    console.log("found")
 })
