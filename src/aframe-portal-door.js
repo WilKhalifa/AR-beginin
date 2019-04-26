@@ -3,6 +3,7 @@
 //////////////////////////////////////////////////////////////////////////////
 AFRAME.registerComponent('registerevents', {
 		init: function () {
+			console.log("test");
 			var marker = this.el;
 			marker.addEventListener('markerFound', function() {
 				var markerId = marker.id;
