@@ -51,14 +51,6 @@ THREEx.Portal360 = function(videoImageURL, doorWidth, doorHeight){
 	doorCenter.add(frameMesh)
 }
 
-var m = document.querySelector("a-portal-door")
-m.addEventListener("markerFound", (e)=>{
-   console.log("found")
-})
-
-m.addEventListener("markerLost", (e)=>{
-   console.log("lost")
-})
 
 
 //////////////////////////////////////////////////////////////////////////////
