@@ -245,14 +245,11 @@ THREEx.Portal360.prototype.update = function () {
 	var isOutsidePortal = localPosition.z >= 0 ? true : false
 
 	// handle mesh visibility based on isOutsidePortal
-	/*
 	if( isOutsidePortal ){
 		this.outsideMesh.visible = true
 		this.insideMesh.visible = false
 	}else{
 		this.outsideMesh.visible = false
 		this.insideMesh.visible = true
-	}*/
-	this.outsideMesh.visible = false
-	this.insideMesh.visible = true
+	}
 }
