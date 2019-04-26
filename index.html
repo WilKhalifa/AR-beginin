@@ -3,30 +3,26 @@
 <!-- include ar.js for A-Frame -->
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 <!-- include aframe-portal-door -->
-<script src='js/aframe-portal-door.js'></script>
-<script src='js/threex-portal-door.js'></script>
+<script src='src/aframe-portal-door.js'></script>
+<script src='src/threex-portal-door.js'></script>
 
 
 <body style='margin : 0px; overflow: hidden;'>
-  <a-scene embedded arjs>
-    <!-- create your content here. just a box for now -->
-    <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
-    <!-- define a camera which will move according to the marker position -->
+
+  <a-scene embedded arjs='trackingMethod: best;'>
 
     <a-anchor hit-testing-enabled='true'>
 
 			<!-- portal 360 with an image -->
-			<a-portal-door url='https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg' position='0 0 0' scale='0.7 1 0.7' rotation='0 90 0'><a-portal-door>
+			<a-portal-door url='images/360_topaz.png' position='0 0 0' scale='1 1 1' rotation='0 90 0'><a-portal-door>
 
 			<!-- portal 360 with an video -->
 			<!-- <a-portal-door url='videos/pano.webm' position='0 0 0' scale='2 2 2' rotation='0 90 0'><a-portal-door> -->
-			<!-- <a-portal-door url='videos/aframe-city-360.mp4' position='0 0 0' scale='2 2 2' rotation='0 90 0'><a-portal-door> -->
+			<!--<a-portal-door url='videos/aframe-city-360.mp4' position='0 0 0' scale='2 2 2' rotation='0 180 0'><a-portal-door>-->
 
 		</a-anchor>
 
 		<!-- Define a static camera -->
 		<a-camera-static/>
-
-    <a-marker-camera preset='hiro'></a-marker-camera>
   </a-scene>
 </body>
