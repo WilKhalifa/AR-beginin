@@ -3,15 +3,13 @@
 //////////////////////////////////////////////////////////////////////////////
 AFRAME.registerComponent('registerevents', {
 		init: function () {
-			var marker = this.el;
+			var marker = document.getElementById('marker')
 			marker.addEventListener('markerFound', function() {
-				var markerId = marker.id;
-				console.log('markerFound', markerId);
+				console.log('markerFound');
 				// TODO: Add your own code here to react to the marker being found.
 			});
 			marker.addEventListener('markerLost', function() {
-				var markerId = marker.id;
-				console.log('markerLost', markerId);
+				console.log('markerLost');
 				// TODO: Add your own code here to react to the marker being lost.
 			});
 		}
